@@ -1,0 +1,51 @@
+@page {
+  size: portrait;
+  margin: 0.5in;
+}
+
+@media print {
+  html,
+  body {
+    background: #fff;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .print-actions,
+  .site-header,
+  .header-controls,
+  .header-link,
+  button,
+  .btn {
+    display: none !important;
+  }
+
+  .page-wrap,
+  .sheet {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+
+  .section,
+  .lower-grid,
+  .side-stack,
+  .table-wrap {
+    break-inside: avoid;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,161 @@
+/* =================================
+   Tables / Grid Tables
+================================= */
+.grid-table,
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 14px;
+}
+
+.grid-table th,
+.grid-table td,
+table th,
+table td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.grid-table th,
+table th {
+    background: #f5f5f5;
+}
+
+.table-wrap {
+    overflow: visible;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+}
+
+.narrow-table {
+    max-width: 650px;
+}
+
+table.roster td.Emergency {
+    background: hsl(0deg 100% 50% / 9%);
+}
+table.roster td.Primary {
+    background: hsl(110.53deg 100% 50% / 9%);
+}
+
+.generate-grid-table,
+.grid-table {
+    min-width: 760px;
+}
+
+.cell-select {
+    min-width: 150px;
+    max-width: 180px;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.duplicate-select {
+    border: 2px solid #dc2626 !important;
+    background: #fef2f2 !important;
+}
+
+.duplicate-note {
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #b91c1c;
+}
+
+.open-position-cell {
+    background: #f9fafb;
+    color: #6b7280;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.open-position-label {
+    padding: 10px 6px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #6b7280;
+}
+
+.desktop-lineup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+}
+
+.desktop-inning-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 16px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.desktop-inning-header {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.desktop-position-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.desktop-position-tile {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 10px;
+    min-height: 70px;
+}
+
+.desktop-position-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 800;
+    color: #64748b;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.desktop-position-tile strong {
+    display: block;
+    font-size: 13px;
+    line-height: 1.3;
+    color: #0f172a;
+}
+
+@media (max-width: 760px) {
+    .desktop-lineup-grid {
+        display: none;
+    }
+}
+/* Desktop / Mobile visibility helpers */
+
+.desktop-table {
+    display: block;
+}
+
+.mobile-cards,
+.generated-lineup-mobile,
+.bench-assignments-mobile {
+    display: none;
+}
+
+/* Mobile */
+
+@media (max-width: 760px) {
+    .desktop-table {
+        display: none !important;
+    }
+
+    .mobile-cards,
+    .generated-lineup-mobile,
+    .bench-assignments-mobile {
+        display: block !important;
+    }
+}

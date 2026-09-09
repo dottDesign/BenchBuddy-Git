@@ -1,0 +1,486 @@
+/* =================================
+   Responsive Rules
+================================= */
+@media (max-width: 900px) {
+    .desktop-nav {
+        display: none;
+    }
+    .nav-toggle {
+        display: inline-flex;
+    }
+    .site-team-name {
+        max-width: 140px;
+    }
+    .dash-grid,
+    .account-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 901px) {
+    .mobile-nav-drawer {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-header-inner {
+        padding: 10px 16px;
+    }
+    .site-logo {
+        height: 60px;
+    }
+    .brand-logo {
+        height: 44px;
+    }
+    .page-wrap {
+        padding: 0 12px 28px;
+    }
+    .page-title {
+        font-size: 28px;
+        margin-bottom: 14px;
+    }
+    .card {
+        padding: 16px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    textarea {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .actions-row,
+    .inline-actions,
+    .stack-actions,
+    .member-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .actions-row > *,
+    .inline-actions > *,
+    .stack-actions > *,
+    .member-actions > * {
+        width: 100%;
+    }
+
+    .meta {
+        grid-template-columns: 1fr;
+    }
+    .positions {
+        gap: 10px;
+    }
+    .workflow {
+        align-items: flex-start;
+    }
+    .workflow-arrow {
+        display: none;
+    }
+
+    .desktop-table,
+    .desktop-only {
+        display: none !important;
+    }
+    .mobile-cards,
+    .mobile-only {
+        display: block !important;
+    }
+
+    .roster-slot {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        margin-bottom: 14px;
+    }
+    .cell-select {
+        min-width: 140px;
+    }
+    .generator-settings-grid {
+        grid-template-columns: 1fr;
+    }
+    .positions-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .quick-links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .segment-control {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        width: 100%;
+    }
+    .segment-btn {
+        min-width: 0;
+        padding: 10px 8px;
+        font-size: 16px;
+    }
+
+    .game-meta-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .desktop-lineup-editor {
+        display: none !important;
+    }
+    .mobile-lineup-editor {
+        display: grid;
+        gap: 16px;
+    }
+    .mobile-inning-card {
+        border: 1px solid #ddd;
+        border-radius: 16px;
+        padding: 14px;
+        background: #fff;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    }
+    .mobile-inning-card h3 {
+        margin: 0 0 12px;
+    }
+    .mobile-inning-card h4 {
+        margin: 16px 0 8px;
+    }
+    .mobile-position-row {
+        display: grid;
+        grid-template-columns: 58px 1fr;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .mobile-position-row span {
+        font-weight: 800;
+    }
+    .mobile-position-row select {
+        width: 100%;
+        min-height: 42px;
+        border: 1px solid #cbd5e1;
+        border-radius: 10px;
+        padding: 8px 10px;
+        font-size: 16px;
+        background: #fff;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-only {
+        display: none !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .whatsapp-support {
+        right: 16px;
+        bottom: 20px;
+        padding: 10px 14px;
+    }
+    .mobile-card {
+        display: block;
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+    .mobile-card-title {
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+    .mobile-card-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 6px 0;
+        border-top: 1px solid #f3f4f6;
+    }
+    .mobile-card-label {
+        font-weight: 700;
+        color: #6b7280;
+    }
+}
+
+@media (max-width: 640px) {
+    .cookie-banner-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cookie-actions {
+        width: 100%;
+    }
+    .cookie-actions button {
+        flex: 1;
+    }
+
+    .coach-helper-fab {
+        right: 12px;
+        bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+        min-height: 44px;
+        padding: 0 16px;
+        font-size: 13px;
+    }
+    .coach-helper-widget {
+        left: 12px;
+        right: 12px;
+        bottom: calc(64px + env(safe-area-inset-bottom, 0px));
+        width: auto;
+        height: min(72vh, 560px);
+        max-height: min(72vh, 560px);
+        border-radius: 18px;
+    }
+    .coach-helper-messages {
+        padding: 10px;
+    }
+    .coach-helper-user,
+    .coach-helper-bot {
+        font-size: 13px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .coach-helper-quick-actions {
+        padding: 10px;
+        gap: 6px;
+    }
+    .coach-helper-form {
+        padding: 10px;
+        gap: 6px;
+    }
+    .coach-helper-form .btn {
+        flex: 0 0 auto;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 24px;
+    }
+    .card {
+        padding: 12px;
+    }
+    .grid-table th,
+    .grid-table td,
+    table th,
+    table td {
+        padding: 8px;
+    }
+    .positions-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .coach-helper-widget {
+        left: 8px;
+        right: 8px;
+        bottom: calc(60px + env(safe-area-inset-bottom, 0px));
+        height: 74vh;
+        max-height: 74vh;
+    }
+    .coach-helper-fab {
+        right: 8px;
+        bottom: calc(8px + env(safe-area-inset-bottom, 0px));
+    }
+    .coach-helper-header {
+        padding: 8px 12px 10px;
+    }
+    .coach-helper-title {
+        font-size: 14px;
+    }
+    .coach-helper-close {
+        font-size: 20px;
+    }
+    .coach-helper-user,
+    .coach-helper-bot {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .coach-helper-input {
+        font-size: 16px;
+    }
+}
+
+/* =========================================================
+   Tournament Pages
+========================================================= */
+
+.tournament-header-card {
+    margin-bottom: 16px;
+}
+
+.tournament-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.tournament-detail-box {
+    background: var(--surface-muted, #f7f7f8);
+    border: 1px solid var(--border-color, #e5e7eb);
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.tournament-detail-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--muted-color, #6b7280);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+
+.tournament-detail-value {
+    font-weight: 700;
+    color: var(--text-color, #111827);
+}
+
+.tournament-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.tournament-sort-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: end;
+    margin: 16px 0;
+}
+
+.tournament-sort-row label {
+    min-width: 180px;
+    margin: 0;
+}
+
+.tournament-status-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 84px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.tournament-status-pill.available {
+    background: #e8f7ef;
+    color: #166534;
+}
+
+.tournament-status-pill.resting {
+    background: #fdecec;
+    color: #991b1b;
+}
+
+.tournament-table .btn,
+.tournament-table button.btn {
+    white-space: nowrap;
+}
+
+.tournament-stat-muted {
+    color: var(--muted-color, #6b7280);
+    font-size: 0.86rem;
+}
+
+/* Mobile tournament tables */
+@media (max-width: 760px) {
+    .tournament-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tournament-sort-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .tournament-sort-row label {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .tournament-sort-row button {
+        width: 100%;
+    }
+
+    .tournament-table table,
+    .tournament-table thead,
+    .tournament-table tbody,
+    .tournament-table th,
+    .tournament-table td,
+    .tournament-table tr {
+        display: block;
+    }
+
+    .tournament-table thead {
+        display: none;
+    }
+
+    .tournament-table table {
+        border: 0;
+    }
+
+    .tournament-table tbody {
+        display: grid;
+        gap: 12px;
+    }
+
+    .tournament-table tr {
+        background: var(--card-bg, #ffffff);
+        border: 1px solid var(--border-color, #e5e7eb);
+        border-radius: 14px;
+        padding: 10px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .tournament-table td {
+        display: grid;
+        grid-template-columns: 120px minmax(0, 1fr);
+        gap: 10px;
+        align-items: center;
+        padding: 8px 4px;
+        border: 0;
+        border-bottom: 1px solid var(--border-color, #e5e7eb);
+        text-align: right;
+    }
+
+    .tournament-table td:last-child {
+        border-bottom: 0;
+    }
+
+    .tournament-table td::before {
+        content: attr(data-label);
+        font-weight: 800;
+        color: var(--muted-color, #6b7280);
+        text-align: left;
+    }
+
+    .tournament-table td[data-label="Actions"] {
+        display: block;
+        text-align: left;
+    }
+
+    .tournament-table td[data-label="Actions"]::before {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .tournament-table td[data-label="Actions"] .btn,
+    .tournament-table td[data-label="Actions"] button.btn {
+        width: 100%;
+        margin: 4px 0;
+    }
+
+    .tournament-table td[data-label="Player"] {
+        font-size: 1rem;
+        font-weight: 800;
+    }
+}

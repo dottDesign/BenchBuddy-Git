@@ -1,0 +1,331 @@
+/* =================================
+   Cards / Mobile Cards / Feature Requests
+================================= */
+.quick-link-card,
+.next-step-card,
+.soft-panel {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fafafa;
+    padding: 14px;
+}
+
+.quick-link-card {
+    display: block;
+    text-decoration: none;
+    color: #111827;
+}
+
+.quick-link-card strong {
+    display: block;
+    margin-bottom: 6px;
+}
+.next-step-card {
+    margin-bottom: 12px;
+}
+.next-step-card:last-child {
+    margin-bottom: 0;
+}
+
+.desktop-table {
+    display: block;
+}
+.mobile-only,
+.mobile-user-list {
+    display: none;
+}
+
+.mobile-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fafafa;
+    padding: 14px;
+    margin-bottom: 12px;
+}
+
+.mobile-card:last-child {
+    margin-bottom: 0;
+}
+.mobile-card-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.mobile-card-row {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+.mobile-card-row:last-child {
+    margin-bottom: 0;
+}
+.mobile-card-label {
+    color: #6b7280;
+    font-weight: bold;
+    display: inline-block;
+    min-width: 88px;
+}
+
+.mobile-card-list {
+    display: grid;
+    gap: 14px;
+}
+.mobile-card-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+.mobile-card-header h3 {
+    margin: 0 0 4px;
+    font-size: 1rem;
+}
+.mobile-card-header p {
+    margin: 0;
+    color: #666;
+    font-size: 0.85rem;
+}
+.mobile-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+}
+
+.mobile-stat-grid div {
+    background: #f6f7f9;
+    border-radius: 10px;
+    padding: 10px;
+}
+.mobile-stat-grid strong {
+    display: block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 3px;
+}
+.mobile-stat-grid span {
+    font-weight: 700;
+}
+.mobile-reasons {
+    margin-top: 12px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+.mobile-reasons strong {
+    display: block;
+    margin-bottom: 6px;
+}
+.mobile-reasons p {
+    margin: 4px 0;
+    font-size: 0.88rem;
+}
+.mobile-card-actions form,
+.mobile-card-actions button {
+    width: 100%;
+}
+
+.game-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fafafa;
+    padding: 14px;
+    margin-bottom: 12px;
+}
+
+.game-card:last-child {
+    margin-bottom: 0;
+}
+.game-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.game-row {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+.game-row:last-child {
+    margin-bottom: 0;
+}
+.game-label {
+    color: #6b7280;
+    font-weight: bold;
+    display: inline-block;
+    min-width: 88px;
+}
+
+.request-list {
+    display: grid;
+    gap: 1rem;
+}
+.request-card {
+    border: 1px solid var(--border-color, #e5e7eb);
+    border-radius: 16px;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+.request-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.request-top h2 {
+    margin: 0.5rem 0 0.25rem;
+    font-size: 1.2rem;
+}
+.request-body {
+    margin: 1rem 0;
+    line-height: 1.55;
+}
+.admin-request-form {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+.admin-request-form label {
+    display: grid;
+    gap: 0.35rem;
+    font-weight: 600;
+}
+.admin-request-form input,
+.admin-request-form select,
+.admin-request-form textarea {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 0.65rem 0.75rem;
+}
+.convert-form {
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.feature-card-planned {
+    background: #fffbeb;
+    border: 1px solid #f59e0b;
+}
+.feature-card-beta {
+    background: #eff6ff;
+    border: 1px solid #3b82f6;
+}
+.feature-card-live {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+}
+.feature-card-new {
+    border: 1px solid #16a34a !important;
+    background: #16a34a0d;
+}
+.history-game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+    align-items: stretch;
+}
+
+.history-game-grid .mobile-card {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.history-game-grid .mobile-card-title {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.history-game-grid .mobile-card-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.history-game-grid .mobile-card-row:last-of-type {
+    border-bottom: 0;
+}
+
+.history-game-grid .stack-actions {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.history-game-grid .stack-actions .btn,
+.history-game-grid .stack-actions .btn-secondary {
+    flex: 1 1 150px;
+    text-align: center;
+}
+
+@media (max-width: 520px) {
+    .history-game-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .history-game-grid .stack-actions .btn,
+    .history-game-grid .stack-actions .btn-secondary {
+        flex: 1 1 100%;
+    }
+}
+/* =========================================================
+   Lineup Coach Notes
+========================================================= */
+
+.lineup-notes-card {
+    margin-bottom: 18px;
+}
+
+.lineup-notes-list {
+    display: grid;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.lineup-note {
+    border: 1px solid var(--border-color, #e5e7eb);
+    background: var(--surface-muted, #f7f7f8);
+    border-radius: 14px;
+    padding: 12px;
+}
+
+.lineup-note-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--muted-color, #6b7280);
+    font-size: 0.88rem;
+    margin-bottom: 8px;
+}
+
+.lineup-note-meta strong {
+    color: var(--text-color, #111827);
+}
+
+.lineup-note p {
+    margin: 0;
+    line-height: 1.45;
+}
+
+@media (max-width: 760px) {
+    .lineup-note-meta {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .lineup-note form .btn,
+    .lineup-notes-card form button {
+        width: 100%;
+    }
+}
+
+.lineup-notes-card {
+    background: #fffb79 !important;
+}

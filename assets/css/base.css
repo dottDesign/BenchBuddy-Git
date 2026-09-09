@@ -1,0 +1,108 @@
+/* =================================
+   Theme Variables / Base Reset
+================================= */
+:root {
+    --bg: #f7f7f9;
+    --surface: #ffffff;
+    --surface-soft: #fafafa;
+    --text: #222222;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --nav-bg: #111827;
+    --nav-text: #ffffff;
+    --primary: #ff0000;
+    --primary-dark: #bb0000;
+    --ok-bg: #eaf7ea;
+    --ok-border: #b7ddb7;
+    --err-bg: #fdecec;
+    --err-border: #efb5b5;
+    --warn-bg: #fff8e1;
+    --warn-border: #ecd58b;
+    --info-bg: #eef4ff;
+    --info-border: #c9d8ff;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --radius: 14px;
+    --radius-sm: 8px;
+}
+
+
+@font-face {
+    font-family: 'LIBRARY 3 AM';
+    src: url('/assets/fonts/library-font/LIBRARY3AM.woff2') format('woff2'),
+         url('/assets/fonts/library-font/LIBRARY3AM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LIBRARY 3 AM soft';
+    src: url('/assets/fonts/library-font/LIBRARY3AMsoft.woff2') format('woff2'),
+         url('/assets/fonts/library-font/LIBRARY3AMsoft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.brand-title-font {
+    font-family: 'LIBRARY 3 AM soft', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    line-height: 1.05;
+
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    background-image:
+        linear-gradient(rgb(255 255 255), rgb(255 255 255 / 90%)),
+        url(/assets/images/tile_background.png);
+}
+
+body {
+    overflow-x: hidden;
+}
+body.mobile-nav-open,
+body.modal-open {
+    overflow: hidden;
+}
+
+a {
+    color: var(--primary);
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+form {
+    margin: 0;
+}
+.hide {
+    display: none !important;
+}
+
+code {
+    background: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+pre {
+    white-space: pre-wrap;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    overflow: auto;
+}
